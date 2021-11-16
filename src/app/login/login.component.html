@@ -1,0 +1,7 @@
+<div *ngIf='invalidCred'>{{errorMessage}}</div>
+
+<div>
+   UserName :  <input type="text" name="userName" [(ngModel)] = "userName" > 
+   Password :  <input type="text" name="password" [(ngModel)] = "password" >
+   <button (click)=handleLogin()>Login</button>
+</div>
